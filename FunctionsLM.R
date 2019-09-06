@@ -7,6 +7,7 @@ generateY <- function(X, beta, sigma, seed = 5832652){
   #[ToDo] Set seed and generate Y following linear model
   set.seed(seed)
   
+  # Generate Y = Xbeta + epsilon
   Y = X %*% beta + rnorm(nrow(X), 0, sigma)
   
   # Return Y
